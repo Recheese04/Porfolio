@@ -1,6 +1,6 @@
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { FadeIn, StaggerContainer } from "@/components/animations/FadeIn";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Facebook, Github, Linkedin } from "lucide-react";
 
 export function Contact() {
     return (
@@ -33,6 +33,36 @@ export function Contact() {
                                 <span className="font-bold text-sm text-foreground">Phone</span>
                             </div>
                             <span className="text-sm text-muted-foreground">+63 9561702750</span>
+                        </a>
+                    </FadeIn>
+
+                    <FadeIn>
+                        <a href="https://www.facebook.com/rechiejames.postanes.9" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 md:p-5 border-b border-border hover:bg-muted/50 transition-colors cursor-pointer outline-none">
+                            <div className="flex items-center gap-3">
+                                <Facebook className="w-4 h-4 text-muted-foreground" />
+                                <span className="font-bold text-sm text-foreground">Facebook</span>
+                            </div>
+                            <span className="text-sm text-muted-foreground">Rechie James Postanes</span>
+                        </a>
+                    </FadeIn>
+
+                    <FadeIn>
+                        <a href="https://github.com/Recheese04" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 md:p-5 border-b border-border hover:bg-muted/50 transition-colors cursor-pointer outline-none">
+                            <div className="flex items-center gap-3">
+                                <Github className="w-4 h-4 text-muted-foreground" />
+                                <span className="font-bold text-sm text-foreground">GitHub</span>
+                            </div>
+                            <span className="text-sm text-muted-foreground">@Recheese04</span>
+                        </a>
+                    </FadeIn>
+
+                    <FadeIn>
+                        <a href="https://linkedin.com/in/rechie-james-postanes" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 md:p-5 border-b border-border hover:bg-muted/50 transition-colors cursor-pointer outline-none">
+                            <div className="flex items-center gap-3">
+                                <Linkedin className="w-4 h-4 text-muted-foreground" />
+                                <span className="font-bold text-sm text-foreground">LinkedIn</span>
+                            </div>
+                            <span className="text-sm text-muted-foreground">Rechie James Postanes</span>
                         </a>
                     </FadeIn>
 

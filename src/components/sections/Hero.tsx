@@ -1,7 +1,7 @@
 import { SectionWrapper } from "@/components/layout/SectionWrapper";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { Button } from "@/components/ui/button";
-import { BadgeCheck, Calendar, Mail, FileText } from "lucide-react";
+import { BadgeCheck, Calendar, Mail, FileText, Github, Linkedin, Facebook } from "lucide-react";
 
 export function Hero() {
     const scrollTo = (href: string) => {
@@ -30,7 +30,7 @@ export function Hero() {
                 <div className="flex flex-col gap-3">
                     <FadeIn delay={0.2} className="flex items-center gap-2">
                         <h1 className="text-3xl md:text-5xl font-sans font-bold tracking-tight text-foreground">
-                            Rechie James
+                            Rechie James Postanes
                         </h1>
                         <BadgeCheck className="w-6 h-6 md:w-8 md:h-8 text-blue-500 fill-blue-50 mt-1" />
                     </FadeIn>
@@ -72,6 +72,19 @@ export function Hero() {
                         >
                             <FileText className="mr-2 h-4 w-4" /> View Projects
                         </Button>
+                    </FadeIn>
+
+                    {/* Social Links */}
+                    <FadeIn delay={0.6} className="flex items-center gap-4 mt-4">
+                        <a href="https://github.com/Recheese04" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors p-2 -ml-2 rounded-full hover:bg-muted" aria-label="GitHub">
+                            <Github className="w-5 h-5" />
+                        </a>
+                        <a href="https://linkedin.com/in/rechie-james-postanes" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors p-2 rounded-full hover:bg-muted" aria-label="LinkedIn">
+                            <Linkedin className="w-5 h-5" />
+                        </a>
+                        <a href="https://www.facebook.com/rechiejames.postanes.9" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors p-2 rounded-full hover:bg-muted" aria-label="Facebook">
+                            <Facebook className="w-5 h-5" />
+                        </a>
                     </FadeIn>
                 </div>
             </div>
