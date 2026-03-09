@@ -1,0 +1,5 @@
+src/components/animations/FadeIn.tsx(2,10): error TS1484: 'ReactNode' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/components/layout/SectionWrapper.tsx(1,10): error TS1484: 'ReactNode' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/components/sections/Contact.tsx(5,31): error TS6133: 'Github' is declared but its value is never read.
+src/components/sections/Contact.tsx(5,39): error TS6133: 'Linkedin' is declared but its value is never read.
+src/components/sections/Contact.tsx(5,49): error TS6133: 'Facebook' is declared but its value is never read.

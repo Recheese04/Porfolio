@@ -1,0 +1,23 @@
+
+> portfolio@0.0.0 build
+> tsc -b && vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m✓[39m 13 modules transformed.
+[31m✗[39m Build failed in 651ms
+[31merror during build:
+[31m[vite:css] [postcss] Cannot find module 'tailwindcss-animate'
+Require stack:
+- C:\Users\phert\OneDrive\Desktop\Portfolio\tailwind.config.js[31m
+file: [36mC:/Users/phert/OneDrive/Desktop/Portfolio/src/index.css:undefined:NaN[31m
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)
+    at Function.resolve (node:internal/modules/helpers:193:19)
+    at _resolve (C:\Users\phert\OneDrive\Desktop\Portfolio\node_modules\jiti\dist\jiti.js:1:246378)
+    at jiti (C:\Users\phert\OneDrive\Desktop\Portfolio\node_modules\jiti\dist\jiti.js:1:249092)
+    at C:\Users\phert\OneDrive\Desktop\Portfolio\tailwind.config.js:1:258
+    at evalModule (C:\Users\phert\OneDrive\Desktop\Portfolio\node_modules\jiti\dist\jiti.js:1:251913)
+    at jiti (C:\Users\phert\OneDrive\Desktop\Portfolio\node_modules\jiti\dist\jiti.js:1:249841)
+    at C:\Users\phert\OneDrive\Desktop\Portfolio\node_modules\tailwindcss\lib\lib\load-config.js:53:30
+    at loadConfig (C:\Users\phert\OneDrive\Desktop\Portfolio\node_modules\tailwindcss\lib\lib\load-config.js:55:6)
+    at getTailwindConfig (C:\Users\phert\OneDrive\Desktop\Portfolio\node_modules\tailwindcss\lib\lib\setupTrackingContext.js:74:116)[39m
