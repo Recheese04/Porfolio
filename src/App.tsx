@@ -9,12 +9,13 @@ import { AiWorkflow } from "./components/sections/AiWorkflow";
 import { Contact } from "./components/sections/Contact";
 import { Footer } from "./components/layout/Footer";
 import { ThemeProvider } from "./components/theme-provider";
+import { Chatbot } from "./components/chat/Chatbot";
 
 function App() {
   return (
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
       <div className="min-h-screen bg-background text-foreground font-sans antialiased selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-300">
-        <div className="max-w-[1200px] mx-auto bg-card min-h-screen border-x border-border shadow-sm flex flex-col pt-12">
+        <div className="max-w-[1200px] mx-auto bg-card min-h-screen border-x border-border shadow-sm flex flex-col pt-12 relative">
           <Navbar />
 
           <main className="flex-grow flex flex-col">
@@ -63,6 +64,7 @@ function App() {
           <Footer />
         </div>
       </div>
+      <Chatbot />
     </ThemeProvider>
   );
 }
