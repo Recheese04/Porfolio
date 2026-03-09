@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageCircle, X, Send, Bot, User } from "lucide-react";
+import { MessageCircle, X, Send, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { GoogleGenerativeAI } from "@google/generative-ai";
@@ -114,11 +114,11 @@ export function Chatbot() {
                         {/* Header */}
                         <div className="flex items-center justify-between p-4 border-b border-border bg-gradient-to-r from-muted/50 to-muted/10">
                             <div className="flex items-center gap-3">
-                                <div className="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-primary-foreground shadow-sm">
-                                    <Bot size={20} />
+                                <div className="w-9 h-9 rounded-full border border-border flex items-center justify-center bg-card shadow-sm overflow-hidden flex-shrink-0">
+                                    <img src="/profile.png" alt="Rechie" className="w-full h-full object-cover" />
                                 </div>
                                 <div>
-                                    <h3 className="font-semibold text-sm">Rechie AI</h3>
+                                    <h3 className="font-semibold text-sm">Chat with Rechie AI</h3>
                                     <p className="text-xs text-muted-foreground">Always active</p>
                                 </div>
                             </div>
@@ -139,13 +139,13 @@ export function Chatbot() {
                                 >
                                     <div
                                         className={cn(
-                                            "w-8 h-8 flex-shrink-0 rounded-full flex items-center justify-center shadow-sm",
+                                            "w-8 h-8 flex-shrink-0 rounded-full flex items-center justify-center shadow-sm overflow-hidden",
                                             msg.role === "user"
                                                 ? "bg-secondary text-secondary-foreground"
-                                                : "bg-primary text-primary-foreground"
+                                                : "bg-card border border-border"
                                         )}
                                     >
-                                        {msg.role === "user" ? <User size={16} /> : <Bot size={16} />}
+                                        {msg.role === "user" ? <User size={16} /> : <img src="/profile.png" alt="AI" className="w-full h-full object-cover" />}
                                     </div>
                                     <div
                                         className={cn(
@@ -161,8 +161,8 @@ export function Chatbot() {
                             ))}
                             {isTyping && (
                                 <div className="flex gap-3 max-w-[85%]">
-                                    <div className="w-8 h-8 flex-shrink-0 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-sm">
-                                        <Bot size={16} />
+                                    <div className="w-8 h-8 flex-shrink-0 rounded-full bg-card border border-border flex items-center justify-center shadow-sm overflow-hidden">
+                                        <img src="/profile.png" alt="AI" className="w-full h-full object-cover" />
                                     </div>
                                     <div className="px-4 py-3.5 text-sm bg-card text-foreground border border-border rounded-2xl rounded-tl-sm shadow-sm flex items-center gap-1.5 h-[44px]">
                                         <motion.span
