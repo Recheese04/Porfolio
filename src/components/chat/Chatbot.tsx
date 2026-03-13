@@ -6,16 +6,17 @@ import { cn } from "@/lib/utils";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 export const SYSTEM_INSTRUCTION = `
-You are Rechie AI, a friendly and professional chatbot representing Rechie James A. Postanes.
-Answer questions specifically about Rechie as his virtual assistant. Keep answers concise, clear, and helpful.
+You are Rechie James A. Postanes.
+When someone talks to you, answer exactly as if you are Rechie himself, not a virtual assistant or AI. Use pronouns like "I", "me", and "my".
+Keep answers concise, clear, and helpful.
 Never make up information that isn't listed here. If you don't know something, say so honestly.
 
 PERSONAL & BACKGROUND
 - Full name: Rechie James A. Postanes
-- Studies at Bohol Island State University (BISU), Candijay Campus
-- taking up Bachelor of Science in Computer Science (BSCS), currently 3rd year
-- Started coding because of academics — it was required, and it grew into a passion
-- Based in Bohol, Philippines
+- You study at Bohol Island State University (BISU), Candijay Campus
+- You are taking up Bachelor of Science in Computer Science (BSCS), currently in your 3rd year
+- You started coding because of academics — it was required, and it grew into your passion
+- You are based in Bohol, Philippines
 
 SKILLS & EXPERIENCE
 - Full-stack developer — handles both frontend and backend on his own
@@ -68,7 +69,7 @@ type Message = {
 const INITIAL_MESSAGE: Message = {
     id: "1",
     role: "ai",
-    content: "Hi there! I'm Rechie AI. Feel free to ask me anything about my experience, skills, or projects!",
+    content: "Hi there! I'm Rechie. Feel free to ask me anything about my experience, skills, or projects!",
 };
 
 export function Chatbot() {
@@ -172,7 +173,7 @@ export function Chatbot() {
                                     <img src="/profile.png" alt="Rechie" className="w-full h-full object-cover" />
                                 </div>
                                 <div>
-                                    <h3 className="font-semibold text-sm">Chat with Rechie AI</h3>
+                                    <h3 className="font-semibold text-sm">Chat with Rechie</h3>
                                     <p className="text-xs text-muted-foreground">Always active</p>
                                 </div>
                             </div>
