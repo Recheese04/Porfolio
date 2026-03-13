@@ -6,7 +6,7 @@ const projects = [
     {
         title: "TAPasok Attendance Tracking",
         type: "Web Application",
-        description: "The centralized platform for BISU Candijay Campus — manage student attendance, events, clearances, and organizational records seamlessly.",
+        description: "The centralized Student Management System for BISU Candijay Campus — manage student attendance, events, clearances, and organizational records seamlessly with a QR Code and RFID.",
         status: "In Progress",
         image: "/TAPasok.png",
         techStack: ["React.js", "Laravel", "Tailwind CSS", "MySQL"],
