@@ -46,7 +46,7 @@ export function Hero() {
 
                     <FadeIn delay={0.4} className="mt-1">
                         <p className="text-base md:text-lg text-foreground font-medium tracking-tight">
-                            Junior Full Stack Web Developer \ AI-Enabled
+                            Junior Full Stack Web Developer
                         </p>
                     </FadeIn>
 
@@ -61,7 +61,7 @@ export function Hero() {
                         <Button
                             variant="outline"
                             className="rounded-sm font-medium px-5 h-10 border-border text-foreground hover:bg-muted hover:text-foreground"
-                            onClick={() => window.location.href = "mailto:rechiejames.postanes@bisu.edu.ph"}
+                            onClick={() => scrollTo("#contact")}
                         >
                             <Mail className="mr-2 h-4 w-4" /> Send Email
                         </Button>

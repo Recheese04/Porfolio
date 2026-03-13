@@ -9,6 +9,7 @@ const projects = [
         description: "The centralized platform for BISU Candijay Campus — manage student attendance, events, clearances, and organizational records seamlessly.",
         status: "In Progress",
         image: "/TAPasok.png",
+        techStack: ["React.js", "Laravel", "Tailwind CSS", "MySQL"],
     },
     {
         title: "Manga Reading Website",
@@ -17,6 +18,16 @@ const projects = [
         status: "Active",
         link: "https://recyglen.vercel.app",
         image: "/manga-reader.png",
+        techStack: ["React", "Node.js", "MongoDB"],
+    },
+    {
+        title: "Lakeside Campsite Booking System",
+        type: "Web System",
+        description: "Online booking platform for campsite reservations with real-time availability and payment integration.",
+        status: "In Progress",
+        image: "/lakeside.png",
+        link: "https://lakeside-campsite-booking-system.vercel.app",
+        techStack: ["React", "Typescript", "Tailwind CSS", "PostgreSQL", "Node.js"],
     },
     {
         title: "BISU Accreditation",
@@ -24,7 +35,7 @@ const projects = [
         description: "System for managing and evaluating accreditation workflows for external providers.",
         status: "Completed",
         image: "/EPA.jpg",
-
+        techStack: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     },
     {
         title: "FundMonitor",
@@ -32,6 +43,7 @@ const projects = [
         description: "The all-in-one platform for student organizations to track budgets, request approvals, and generate audit-ready reports instantly.",
         status: "Completed",
         image: "/FundMonitor.png",
+        techStack: ["React", "PHP", "MySQL"],
     },
     {
         title: "StepMap",
@@ -39,21 +51,24 @@ const projects = [
         description: "Fitness and movement tracking app monitoring steps with location-aware functionality.",
         status: "Completed",
         image: "/StepMap.png",
-
+        techStack: ["React Native", "Expo", "Firebase", "Street Map API"],
     },
     {
         title: "The Local Harvest",
         type: "E-commerce",
-        description: "Agriculture-focused online marketplace designed for buying and selling local products.",
+        description: "Agriculture-focused online marketplace designed for buying and selling local farm products.",
         status: "Active",
         image: "/TheLocalHarvest.png",
+        techStack: ["Java", "Firebase", "Google Maps API"],
     },
     {
         title: "Huling Gabi",
         type: "Roblox Game",
-        description: "Game development project with a unique local-themed concept and immersive gameplay.",
-        status: "Live",
+        description: "A local-themed Roblox experience with immersive horror gameplay and Filipino folklore elements.",
+        status: "In Progress",
+        techStack: ["Lua", "Roblox Studio"],
     },
+
 ];
 
 export function Projects() {
@@ -86,9 +101,23 @@ export function Projects() {
                                 )}
                             </div>
 
-                            <p className="text-sm text-muted-foreground leading-relaxed mb-6 flex-grow">
+                            <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-grow">
                                 {project.description}
                             </p>
+
+                            {/* Tech Stack */}
+                            {project.techStack && project.techStack.length > 0 && (
+                                <div className="flex flex-wrap gap-1.5 mb-4">
+                                    {project.techStack.map((tech, i) => (
+                                        <span
+                                            key={i}
+                                            className="text-[10px] font-mono font-medium text-primary/80 bg-primary/10 border border-primary/20 px-2 py-0.5 rounded-full"
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                            )}
 
                             <div className="flex items-center gap-2 mt-auto pt-4 border-t border-border">
                                 <span className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground bg-muted px-2 py-1 rounded inline-block">
